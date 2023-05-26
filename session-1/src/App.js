@@ -1,0 +1,11 @@
+import Greeting from "./components/Greeting";
+function App() {
+  return (
+    <div className="App">
+      <h1>hello ali</h1>
+      <Greeting/>
+    </div>
+  );
+}
+
+export default App;
