@@ -9,6 +9,8 @@ function WelcomeFC(props) {
       <p>{props.age}</p>
       <h2>{name}</h2>
       <h1>{age}</h1>
+
+
       <button
         onClick={() => {
           setName("yasser");
@@ -16,6 +18,7 @@ function WelcomeFC(props) {
       >
         Name
       </button>
+
 
       <button
         onClick={() => {
@@ -25,6 +28,8 @@ function WelcomeFC(props) {
       >
         +
       </button>
+
+
       <button
         onClick={() => {
           setAge(age - 1);
@@ -33,6 +38,8 @@ function WelcomeFC(props) {
       >
         -
       </button>
+
+
     </>
   );
 }

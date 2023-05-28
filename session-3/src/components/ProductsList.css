@@ -1,0 +1,22 @@
+.products-list {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+}
+img {
+  box-shadow: 10px 10px 10px #3de9f4;
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: #678cf8;
+    color: white;
+    font-weight: bold;
+
+}
