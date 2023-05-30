@@ -24,6 +24,7 @@ function App() {
       <Input label="password" type="password" /> */}
 
       <Form />
+      
     </div>
   );
 }
