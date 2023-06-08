@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="row">
+      <div className="row col-12 ">
         <div className="col-2 sidebar">
           <Sidebar />
         </div>
@@ -23,7 +23,6 @@ function App() {
             <Route path="products" element={<Products />} />
             <Route path="products/add" element={<AddProduct />} />
             <Route path="products/:productID" element={<ProductDetailss />} />
-            
           </Routes>
         </div>
       </div>

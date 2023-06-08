@@ -12,13 +12,14 @@ function ProductDetailss() {
       .then((product) => {
         setProduct(product);
       });
-  }, [productID]);
+  }, []);
   return (
     <>
+      <p>{product.id}</p>
       <h1>{product.title}</h1>
+      <img src={product.image} className="d-block mx-auto w-25" />
       <p>{product.description}</p>
-      <p>{product.price} $</p>
-      <p className="">{product.category}</p>
+      <p className="btn btn-success d-block ">{product.price} $</p>
     </>
   );
 }

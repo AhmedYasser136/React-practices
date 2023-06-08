@@ -5,5 +5,11 @@ th {
   width: 100px;
 }
 .dec {
-  width: 200px;
+  width: 15px;
+}
+.imge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 50vh; */
 }
