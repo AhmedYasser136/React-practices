@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
 import Navbar from "./components/Navbar";
@@ -20,9 +20,19 @@ function App() {
           <Routes>
             <Route path="" element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="products" element={<Products />} />
-            <Route path="products/add" element={<AddProduct />} />
-            <Route path="products/:productID" element={<ProductDetailss />} />
+
+            <Route
+              path="products"
+              element={
+                <>
+                  <Outlet />
+                </>
+              }
+            >
+              <Route path="" element={<Products />} />
+              <Route path="add" element={<AddProduct />} />
+              <Route path=":productID" element={<ProductDetailss />} />
+            </Route>
           </Routes>
         </div>
       </div>
@@ -31,3 +41,5 @@ function App() {
 }
 
 export default App;
+
+//   json-server --watch db.json --port 4000

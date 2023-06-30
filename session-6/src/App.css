@@ -1,6 +1,6 @@
 .sidebar {
-  height:auto;
-  background-color: #c3dae3;
+  height: 100vmax;
+  background-color: #c3b2ff;
 }
 
 .sidebar li {
@@ -8,6 +8,7 @@
   text-align: center;
 }
 .sidebar li a {
+  color: black;
+  background: white;
   text-decoration: none;
 }
-
